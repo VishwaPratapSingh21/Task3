@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Category component renders correctly 1`] = `
+<div
+  className="col-md-4 col-lg-3 col-sm-6 category-card"
+>
+  <div
+    className="card "
+  >
+    <div
+      className="card-block color word-font"
+    >
+      <h3
+        className="card-title"
+      >
+        lunch
+      </h3>
+      <div
+        className="card-block"
+      >
+        Date_created: 
+        <br />
+        Date_modified: 
+      </div>
+      <div
+        className="card-block text-center"
+      >
+        <Link
+          className="btn btn-sm btn-primary card-link"
+          data-target="#edit_category1"
+          data-toggle="modal"
+          replace={false}
+          to="#"
+        >
+          <i
+            className="fa fa-edit"
+          />
+           Edit
+        </Link>
+        <Link
+          className="btn btn-sm btn-danger card-link"
+          data-target="#delete_category1"
+          data-toggle="modal"
+          replace={false}
+          to="#"
+        >
+          <i
+            className="fa fa-trash"
+          />
+           Delete
+        </Link>
+        <Link
+          className="btn btn-sm btn-success card-link"
+          replace={false}
+          to={
+            Object {
+              "pathname": "/category/1/recipes",
+              "state": Object {
+                "categoryName": "lunch",
+              },
+            }
+          }
+        >
+          <i
+            className="fa fa-eye"
+          />
+           Recipes
+        </Link>
+      </div>
+      <EditCategory
+        editCategory={[Function]}
+        id={1}
+        name="lunch"
+      />
+      <DeleteCategory
+        deleteCategory={[Function]}
+        id={1}
+        name="lunch"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ViewCategories component renders properly 1`] = `
+<div>
+  <div
+    className="viewcategories"
+  >
+    <div
+      className="row justify-content-md-center"
+    >
+      <CreateCategory
+        getCategories={[Function]}
+      />
+      <Search
+        handleSearch={[Function]}
+        placeholder="categories "
+      />
+    </div>
+    <br />
+    <div
+      className="row categories"
+    >
+      <div
+        className="col-sm-5 offset-sm-3"
+      >
+        <div
+          className="alert alert-info"
+          role="alert"
+        >
+          <strong>
+            Ooops!
+          </strong>
+           No categories , go a head and add some
+        </div>
+      </div>
+    </div>
+    <Pagination
+      activePage={null}
+      changePage={[Function]}
+      nextPage={null}
+      previousPage={null}
+      totalPages={null}
+    />
+  </div>
+</div>
+`;

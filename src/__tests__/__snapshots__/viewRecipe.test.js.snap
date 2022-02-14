@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe renders correctly 1`] = `
+<div
+  className="card "
+>
+  <div
+    aria-controls="collapseOne"
+    aria-expanded="true"
+    className="card-header recipe"
+    data-toggle="collapse"
+    href="#recipeDetails1"
+    id="recipe-1"
+    role="tab"
+  >
+    <h3
+      className="mb-0"
+    >
+      <span
+        className="word-font"
+      >
+        mockTitle
+      </span>
+    </h3>
+  </div>
+  <div
+    aria-labelledby="recipe-1"
+    className="collapse"
+    id="recipeDetails1"
+    role="tabpanel"
+  >
+    <div
+      className="card-block"
+    >
+      <h4>
+        Description:
+      </h4>
+      mockDesc
+    </div>
+    <hr
+      style={
+        Object {
+          "backgroundColor": "#26A69A",
+          "height": 2,
+        }
+      }
+    />
+    <div
+      className="text-center"
+      style={
+        Object {
+          "marginBottom": 4,
+        }
+      }
+    >
+      <button
+        className="btn btn-sm btn-primary"
+        data-target="#edit_recipe1"
+        data-toggle="modal"
+        to="#"
+      >
+        <i
+          className="fa fa-edit"
+        />
+         Edit
+      </button>
+      <button
+        className="btn btn-sm btn-danger "
+        data-target="#delete_recipe1"
+        data-toggle="modal"
+        to="#"
+      >
+        <i
+          className="fa fa-trash"
+        />
+         Delete
+      </button>
+    </div>
+    <EditRecipe
+      description="mockDesc"
+      editRecipe={[Function]}
+      id={1}
+      title="mockTitle"
+    />
+    <DeleteRecipe
+      deleteRecipe={[Function]}
+      description="mockDesc"
+      id={1}
+      title="mockTitle"
+    />
+  </div>
+</div>
+`;
+
+exports[`ViewRecipes component renders properly 1`] = `
+<div>
+  <div
+    className="viewrecipes"
+  >
+    <h4
+      className="text-center"
+    >
+      <span
+        className="label label-primary"
+      >
+        Category 
+      </span>
+    </h4>
+    <br />
+    <div
+      className="row justify-content-md-center"
+    >
+      <CreateRecipe
+        getRecipes={[Function]}
+        location={
+          Object {
+            "state": Object {},
+          }
+        }
+        match={
+          Object {
+            "params": Object {},
+          }
+        }
+      />
+      <Search
+        handleSearch={[Function]}
+        placeholder="recipes"
+      />
+    </div>
+    <div
+      className="col-md-6 offset-md-3"
+    >
+      <div
+        aria-multiselectable="true"
+        id="accordion"
+        role="tablist"
+      >
+        <div
+          className="col-md-5 offset-sm-4"
+        >
+          <div
+            className="alert alert-info"
+            role="alert"
+          >
+            <strong>
+              Ooops!
+            </strong>
+             No recipes ,add some
+          </div>
+        </div>
+      </div>
+    </div>
+    <Pagination
+      activePage={null}
+      changePage={[Function]}
+      nextPage={null}
+      previousPage={null}
+      totalPages={null}
+    />
+  </div>
+</div>
+`;
